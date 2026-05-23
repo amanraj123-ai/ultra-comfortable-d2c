@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultra Comfortable | Futuristic Luxury Smart Ring</title>
+  <meta name="description" content="Discover the UC Ring Air — the world's most comfortable, featherlight (2.2g) smart ring designed for deep sleep recovery, circadian rhythm alignment, and travel wellness.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Feather Icons for modern premium iconography -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="preloader-circle">
+      <div class="preloader-inner-circle"></div>
+    </div>
+    <div class="preloader-text">Calibrating Sensors...</div>
+  </div>
+
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow" id="mouse-glow"></div>
+
+  <!-- Header Navigation -->
+  <header id="main-header">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo" id="nav-logo">
+        <div class="logo-icon"></div>
+        <span>ULTRA COMFORTABLE</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#hero" class="active" id="link-hero">Ring Air</a></li>
+          <li><a href="#anatomy" id="link-anatomy">Anatomy</a></li>
+          <li><a href="#app-simulator" id="link-app">UC App</a></li>
+          <li><a href="#durability-tester" id="link-durability">Durability</a></li>
+          <li><a href="#biological-age" id="link-age">Ultra Age</a></li>
+          <li><a href="#quiz" id="link-quiz">Personalize</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-icon-btn" id="open-cart-btn" aria-label="Open Cart">
+          <i data-feather="shopping-bag"></i>
+          <span class="cart-badge" id="cart-counter">0</span>
+        </button>
+        <button class="glow-btn" id="nav-cta-btn" onclick="scrollToQuiz()">Pre-Order</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section-padding reveal-element">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tagline">Comfort is the ultimate metric</div>
+        <h1 class="hero-title text-gradient">The invisible wearable.<br>For <span>visible recovery</span>.</h1>
+        <p class="hero-description">
+          The UC Ring Air fits seamlessly into your life. Meticulously engineered from fighter-jet grade titanium and biocompatible medical resin, it tracks your body's vital bio-signals without the screen distraction or wrist bulk.
+        </p>
+        <div class="hero-actions">
+          <button class="glow-btn" id="hero-buy-btn" onclick="scrollToQuiz()">
+            Select Your Finish <i data-feather="arrow-right"></i>
+          </button>
+          <button class="btn-secondary" id="hero-video-btn" onclick="document.getElementById('anatomy').scrollIntoView();">
+            Explore Anatomy
+          </button>
+        </div>
+        <div class="hero-specs">
+          <div class="spec-item">
+            <span class="spec-val">2.2g</span>
+            <span class="spec-lbl">Featherlight</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-val">2.4mm</span>
+            <span class="spec-lbl">Ultra Thin</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-val">6 Days</span>
+            <span class="spec-lbl">Battery Life</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="hero-circle-glow"></div>
+        <img src="file:///C:/Users/amanr/.gemini/antigravity/brain/2aff7b3a-ce93-4ce8-b8a4-241ffd3f06de/uc_ring_hero_1779540630281.png" alt="Ultra Comfortable Smart Ring Space Gray" class="hero-image" id="hero-ring-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Exploded Product View / Anatomy -->
+  <section id="anatomy" class="section-padding reveal-element">
+    <div class="container">
+      <div class="anatomy-header">
+        <div class="section-subtitle">Exquisite Engineering</div>
+        <h2 class="section-title text-gradient">The Anatomy of Comfort</h2>
+        <p style="max-width: 600px; margin: 0 auto;">Hover or tap the components to reveal the microscopic technology packed inside a shell thinner than a coin.</p>
+      </div>
+      <div class="anatomy-container">
+        <!-- Left Side Features -->
+        <div class="anatomy-col">
+          <div class="anatomy-feature active" data-layer="1" id="feature-titanium">
+            <h4><span class="feature-num">01</span> Fighter-Jet Titanium</h4>
+            <p>Outer shell coated with Tungsten Carbide Carbon for scratch resistance and exceptional aerospace-grade durability.</p>
+          </div>
+          <div class="anatomy-feature" data-layer="2" id="feature-sensors">
+            <h4><span class="feature-num">02</span> Bio-PPG Sensors</h4>
+            <p>Green, red, and infrared light paths monitor heart rate, HRV, blood oxygenation, and respiration cycles with clinical fidelity.</p>
+          </div>
+        </div>
+        <!-- Central Exploded Graphic -->
+        <div class="anatomy-visual">
+          <div class="exploded-ring-container">
+            <img src="file:///C:/Users/amanr/.gemini/antigravity/brain/2aff7b3a-ce93-4ce8-b8a4-241ffd3f06de/uc_ring_hero_1779540630281.png" alt="Exploded UC Ring View" class="ring-layer-img" id="anatomy-ring-img">
+            <!-- Pulsing interactive hotspots overlay -->
+            <div class="hotspot" data-layer="1" style="top: 15%; left: 35%;" aria-label="Titanium Outer Shell Highlight"></div>
+            <div class="hotspot" data-layer="2" style="top: 35%; left: 60%;" aria-label="Bio-PPG Sensors Highlight"></div>
+            <div class="hotspot" data-layer="3" style="top: 60%; left: 40%;" aria-label="Hypoallergenic Resin Highlight"></div>
+            <div class="hotspot" data-layer="4" style="top: 75%; left: 52%;" aria-label="Thermistors Highlight"></div>
+          </div>
+        </div>
+        <!-- Right Side Features -->
+        <div class="anatomy-col">
+          <div class="anatomy-feature" data-layer="3" id="feature-resin">
+            <h4><span class="feature-num">03</span> Hypoallergenic Resin</h4>
+            <p>Smooth, medical-grade inner coating guarantees zero irritation, matching your finger shape perfectly all day and night.</p>
+          </div>
+          <div class="anatomy-feature" data-layer="4" id="feature-thermistors">
+            <h4><span class="feature-num">04</span> Medical Thermistors</h4>
+            <p>Continuously tracks microscopic skin temperature deviations to predict immune responses and menstrual cycles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Companion App Simulator & PowerPlugs Store -->
+  <section id="app-simulator" class="section-padding reveal-element">
+    <div class="container">
+      <div class="simulator-grid">
+        <!-- Interactive Tabs Control -->
+        <div class="simulator-info">
+          <div class="section-subtitle">Biohacking Dashboard</div>
+          <h2 class="section-title text-gradient">Your body, decoded in real-time.</h2>
+          <p style="margin-bottom: 2rem;">
+            No screens on your finger, no distraction in your life. Open the UC App to visualize your metabolic recovery, sleep quality, and daily physiological strains. Select an index below to test-drive the tracker interface.
+          </p>
+          <div class="simulator-tabs">
+            <button class="sim-tab-btn active" data-tab="sleep" id="tab-btn-sleep">
+              <div class="tab-btn-content">
+                <div class="tab-icon-box"><i data-feather="moon"></i></div>
+                <div class="tab-text">
+                  <h4>Sleep Index</h4>
+                  <p>Tracks REM, light, deep sleep cycles & efficiency.</p>
+                </div>
+              </div>
+              <div class="tab-badge-score">89</div>
+            </button>
+            <button class="sim-tab-btn" data-tab="recovery" id="tab-btn-recovery">
+              <div class="tab-btn-content">
+                <div class="tab-icon-box"><i data-feather="activity"></i></div>
+                <div class="tab-text">
+                  <h4>Recovery Score</h4>
+                  <p>Calculates HRV, heart rate drop, and stress level.</p>
+                </div>
+              </div>
+              <div class="tab-badge-score">94</div>
+            </button>
+            <button class="sim-tab-btn" data-tab="circadian" id="tab-btn-circadian">
+              <div class="tab-btn-content">
+                <div class="tab-icon-box"><i data-feather="sun"></i></div>
+                <div class="tab-text">
+                  <h4>Circadian Alignment</h4>
+                  <p>Matches activity and caffeine windows to your clock.</p>
+                </div>
+              </div>
+              <div class="tab-badge-score">84</div>
+            </button>
+          </div>
+
+          <!-- REDESIGN ADDITION: PowerPlugs Store Simulator -->
+          <div class="powerplugs-section">
+            <h3>Custom PowerPlugs Store</h3>
+            <p style="font-size: 0.85rem; margin-bottom: 1.25rem; color: var(--text-secondary);">
+              Toggle these plugins to dynamically update widget cards in your virtual app interface.
+            </p>
+            <div class="plugs-store-grid">
+              <div class="plug-store-card" id="plug-caffeine" onclick="togglePowerPlug('caffeine')">
+                <div>
+                  <h5>Caffeine Curfew</h5>
+                  <p>Alerts you before consuming caffeine blocks adenosine absorption.</p>
+                </div>
+                <div class="plug-install-status"><i data-feather="check-circle" style="width: 14px;"></i> <span>Installed</span></div>
+              </div>
+              <div class="plug-store-card" id="plug-jetlag" onclick="togglePowerPlug('jetlag')">
+                <div>
+                  <h5>Jetlag Shifter</h5>
+                  <p>Helps shift biological rhythm when moving across time zones.</p>
+                </div>
+                <div class="plug-install-status"><i data-feather="plus-circle" style="width: 14px;"></i> <span>Add Plug</span></div>
+              </div>
+              <div class="plug-store-card" id="plug-waste" onclick="togglePowerPlug('waste')">
+                <div>
+                  <h5>Brain Clearance</h5>
+                  <p>Tracks glymphatic clearing stages during deep sleep.</p>
+                </div>
+                <div class="plug-install-status"><i data-feather="plus-circle" style="width: 14px;"></i> <span>Add Plug</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone Simulator Mockup -->
+        <div class="app-mockup">
+          <div class="app-screen">
+            <div class="app-header">
+              <div class="app-user-info">
+                <div class="app-avatar"></div>
+                <div>
+                  <div class="app-user-name">Alex Rivera</div>
+                  <div class="app-user-tag">UC Ring Air User</div>
+                </div>
+              </div>
+              <div class="app-live-status">
+                <div class="app-live-dot"></div> Live
+              </div>
+            </div>
+
+            <div class="app-widgets-wrapper" id="app-widgets-container">
+              <!-- Dynamic Recovery Score Card -->
+              <div class="score-hero-card">
+                <div class="score-radial">
+                  <svg>
+                    <circle class="score-bg-circle" cx="70" cy="70" r="60"></circle>
+                    <circle class="score-fill-circle" id="radial-fill" cx="70" cy="70" r="60" stroke="#00b0ff" stroke-dashoffset="40"></circle>
+                  </svg>
+                  <div class="score-value-container">
+                    <span class="score-value" id="score-number">89</span>
+                    <span class="score-label" id="score-label">Sleep Index</span>
+                  </div>
+                </div>
+                <p id="score-card-description" style="font-size: 0.85rem;">Your deep sleep stage was extended by 22 minutes last night. Excellent recovery rate.</p>
+              </div>
+
+              <!-- Dynamic Bar Chart Card -->
+              <div class="app-chart-card">
+                <div class="chart-header">
+                  <span class="chart-title" id="chart-title">Heart Rate Drop Duration</span>
+                  <span class="chart-metric" id="chart-metric">5.4 hrs</span>
+                </div>
+                <div class="chart-container" id="bar-chart-container">
+                  <!-- Bar Chart items will render dynamically from JS -->
+                </div>
+              </div>
+
+              <!-- Installed PowerPlug widgets will render here dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REDESIGN ADDITION: Durability & Stress Tester Section -->
+  <section id="durability-tester" class="section-padding reveal-element">
+    <div class="container tester-grid">
+      <div class="tester-controls">
+        <div class="section-subtitle">Stress Diagnostics</div>
+        <h2 class="section-title text-gradient">Built for the Extremes.</h2>
+        <p style="margin-bottom: 2rem;">
+          The UC Ring Air houses micro-electronics inside a titanium fortress. Select a test method below and slide the stress generator to see the structural defense mechanics in real-time.
+        </p>
+        <div class="tester-selector-box">
+          <button class="tester-select-btn active" id="btn-stress-scratch" onclick="switchStressMode('scratch')">Tungsten Scratch</button>
+          <button class="tester-select-btn" id="btn-stress-water" onclick="switchStressMode('water')">10 ATM Pressure</button>
+          <button class="tester-select-btn" id="btn-stress-heat" onclick="switchStressMode('heat')">Extreme Heat</button>
+        </div>
+        <div class="tester-slider-wrapper">
+          <div class="tester-slider-header">
+            <span class="tester-slider-title" id="stress-slider-label">Scrape Friction</span>
+            <span class="tester-slider-value" id="stress-slider-val">0 N</span>
+          </div>
+          <input type="range" min="0" max="100" value="0" class="tester-slider-input" id="stress-slider" oninput="updateStressVal(this.value)">
+        </div>
+      </div>
+
+      <div class="tester-visual-wrapper">
+        <div class="tester-visual-bg"></div>
+        <img src="file:///C:/Users/amanr/.gemini/antigravity/brain/2aff7b3a-ce93-4ce8-b8a4-241ffd3f06de/uc_ring_hero_1779540630281.png" alt="Durability smart ring render" class="tester-ring-image" id="tester-ring-img">
+        
+        <!-- Animated glow elements overlays -->
+        <div class="stress-glow-overlay" id="overlay-laser"><div class="stress-laser" id="laser-beam"></div></div>
+        <div class="stress-glow-overlay" id="overlay-water"><div class="stress-water-wave" id="water-wave"></div></div>
+        <div class="stress-glow-overlay" id="overlay-heat"><div class="stress-heat-glow" id="heat-glow"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REDESIGN ADDITION: Biological "Ultra Age" Calculator Section -->
+  <section id="biological-age" class="section-padding reveal-element">
+    <div class="container age-grid">
+      <div class="age-calc-card">
+        <div>
+          <div class="section-subtitle">Bio-Metrics Aging</div>
+          <h2 class="section-title text-gradient">Calculate Your Ultra Age</h2>
+          <p style="margin-top: 1rem;">
+            Chronological age is linear. Biological age (Ultra Age) is dynamic, calculated using your heart rate variability (HRV), sleep staging, and active temperature variables.
+          </p>
+        </div>
+        
+        <div class="age-input-group">
+          <label>Select Chronological Age: <span id="age-chrono-label" style="color:#fff; font-weight:700;">30</span> years</label>
+          <input type="range" min="20" max="70" value="30" class="age-slider" id="input-chrono-age" oninput="updateAgeCalculator()">
+          <div class="age-slider-labels">
+            <span>20 yrs</span>
+            <span>70 yrs</span>
+          </div>
+        </div>
+
+        <div class="age-metrics-grid">
+          <div class="age-metric-card selected" id="age-metric-hrv" onclick="toggleAgeMetric('hrv')">
+            <span class="age-metric-lbl">HRV Index</span>
+            <div class="age-metric-val">88 ms (Optimal)</div>
+          </div>
+          <div class="age-metric-card selected" id="age-metric-sleep" onclick="toggleAgeMetric('sleep')">
+            <span class="age-metric-lbl">Deep Sleep</span>
+            <div class="age-metric-val">2.8 hrs (High)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="age-results-visual">
+        <div class="age-rings-container">
+          <svg class="age-ring-svg">
+            <circle class="age-ring-circle age-ring-bg" cx="100" cy="100" r="90"></circle>
+            <circle class="age-ring-circle age-ring-fill chronological" cx="100" cy="100" r="90" stroke-dashoffset="150" id="ring-chrono"></circle>
+            <circle class="age-ring-circle age-ring-fill biological" cx="100" cy="100" r="90" stroke-dashoffset="200" id="ring-bio"></circle>
+          </svg>
+          <div class="age-display-center">
+            <span class="age-display-num" id="results-bio-age">26</span>
+            <span class="age-display-lbl">Ultra Age</span>
+          </div>
+        </div>
+        <div>
+          <div class="age-verdict" id="results-age-verdict">Biological Age is 4 years younger!</div>
+          <p style="font-size: 0.85rem; margin-top: 8px;">Highly oxygenated recovery metrics slow cellular decline rate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personalization & Onboarding Quiz -->
+  <section id="quiz" class="section-padding reveal-element">
+    <div class="container">
+      <div class="anatomy-header">
+        <div class="section-subtitle">Tailor Your Journey</div>
+        <h2 class="section-title text-gradient">Personalize Your UC Experience</h2>
+        <p style="max-width: 600px; margin: 0 auto;">Select your primary wellness target and customize your futuristic ring profile to order.</p>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz-progress">
+          <div class="quiz-progress-fill" id="quiz-progress-indicator"></div>
+        </div>
+
+        <!-- Step 1: Health Goals -->
+        <div class="quiz-step active" data-step="1" id="quiz-step-goals">
+          <h3 class="quiz-question">What is your primary wellness focus?</h3>
+          <p class="quiz-sub">We will pre-load compatible tracking plugins (PowerPlugs) on your app dashboard.</p>
+          <div class="quiz-options">
+            <div class="quiz-option-card selected" data-value="sleep" onclick="selectQuizOption(this)">
+              <div class="quiz-radio"></div>
+              <div class="quiz-option-text">
+                <h4>Sleep & Restorative Recovery</h4>
+                <p>Deep sleep extension, morning recovery diagnostics, stress alignment.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-value="circadian" onclick="selectQuizOption(this)">
+              <div class="quiz-radio"></div>
+              <div class="quiz-option-text">
+                <h4>Circadian Optimization</h4>
+                <p>Caffeine schedules, exposure optimization, jetlag biohacking.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-value="fitness" onclick="selectQuizOption(this)">
+              <div class="quiz-radio"></div>
+              <div class="quiz-option-text">
+                <h4>Metabolism & Activity</h4>
+                <p>Non-exercise activity indexes, cardiovascular metrics, glucose tracking support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Finishes -->
+        <div class="quiz-step" data-step="2" id="quiz-step-finish">
+          <h3 class="quiz-question">Choose your premium casing finish.</h3>
+          <p class="quiz-sub">Each ring is precision polished in high-grade fighter-jet titanium.</p>
+          <div class="quiz-options finish-grid">
+            <div class="quiz-option-card finish-card selected" data-value="Space Gray" onclick="selectQuizOption(this)">
+              <div class="finish-circle matte-gray"></div>
+              <div class="quiz-option-text">
+                <h4>Space Gray</h4>
+                <p>Matte Textured Titanium</p>
+              </div>
+            </div>
+            <div class="quiz-option-card finish-card" data-value="Obsidian Black" onclick="selectQuizOption(this)">
+              <div class="finish-circle obsidian"></div>
+              <div class="quiz-option-text">
+                <h4>Obsidian</h4>
+                <p>Polished Glossy Carbon</p>
+              </div>
+            </div>
+            <div class="quiz-option-card finish-card" data-value="Satin Gold" onclick="selectQuizOption(this)">
+              <div class="finish-circle gold"></div>
+              <div class="quiz-option-text">
+                <h4>Satin Gold</h4>
+                <p>18K Gold Plated Matte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Sizing Kit Option -->
+        <div class="quiz-step" data-step="3" id="quiz-step-sizing">
+          <h3 class="quiz-question">Do you know your smart ring size?</h3>
+          <p class="quiz-sub">We strongly recommend ordering our free Sizing Kit first for an absolute snug fit.</p>
+          <div class="quiz-options">
+            <div class="quiz-option-card selected" data-value="sizing-kit-needed" onclick="selectQuizOption(this)">
+              <div class="quiz-radio"></div>
+              <div class="quiz-option-text">
+                <h4>Send a Free Sizing Kit first (Recommended)</h4>
+                <p>We ship a plastic model kit within 24 hours. Confirm your size later via a link.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-value="size-8" onclick="selectQuizOption(this)">
+              <div class="quiz-radio"></div>
+              <div class="quiz-option-text">
+                <h4>I know my size (Select size)</h4>
+                <p>Select standard ring sizes: US size 7, 8, 9, 10, or 11.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Results -->
+        <div class="quiz-step" data-step="4" id="quiz-step-results">
+          <div class="quiz-results-card">
+            <div class="results-avatar-box">
+              <i data-feather="check-circle"></i>
+            </div>
+            <h3 class="results-heading">Your profile is curated</h3>
+            <p class="results-sub" id="results-profile-summary">SKINCARE RECOVERY & MATTE GRAY</p>
+            <div class="results-rec-box">
+              <div class="results-rec-title">Recommended PowerPlugs pre-loaded:</div>
+              <p class="results-rec-desc">Based on your focus, we've enabled these app modules automatically to quickstart your recovery routine:</p>
+              <div id="results-powerplugs-container">
+                <!-- tags will be injected via JS -->
+              </div>
+            </div>
+            <button class="glow-btn" style="width: 100%; justify-content: center;" id="add-to-cart-quiz-btn" onclick="addConfiguredToCart()">
+              Add UC Ring to Pre-Order drawer <span style="margin-left: 8px;">— $299</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Navigation Footer inside Quiz -->
+        <div class="quiz-footer" id="quiz-navigation-footer">
+          <button class="btn-secondary" id="quiz-prev-btn" onclick="prevQuizStep()" style="visibility: hidden;">
+            <i data-feather="chevron-left" style="vertical-align: middle;"></i> Back
+          </button>
+          <button class="glow-btn" id="quiz-next-btn" onclick="nextQuizStep()">
+            Next Step <i data-feather="chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REDESIGN ADDITION: Testimonial Section featuring the User as the Model -->
+  <section id="model-testimonial" class="section-padding reveal-element">
+    <div class="container testimonial-grid">
+      <div class="testimonial-img-wrapper">
+        <img src="file:///C:/Users/amanr/.gemini/antigravity/brain/2aff7b3a-ce93-4ce8-b8a4-241ffd3f06de/user_brand_model_1779541044926.png" alt="Aman - Wearable Advocate model photo" class="testimonial-img">
+      </div>
+      <div class="testimonial-card">
+        <div class="section-subtitle">Wearable Advocacy</div>
+        <div class="testimonial-quote">
+          "Deciphering metabolic fitness and sleep trends shouldn't mean strapping a heavy computer screen to your wrist. The UC Ring Air is so comfortable I forget it's there. It's the invisible edge I needed for sleep recovery."
+        </div>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Aman</span>
+          <span class="testimonial-title">Founder & Wearable Advocate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider / Product Lifestyle visual -->
+  <section class="section-padding reveal-element" style="background-color: var(--bg-secondary); overflow: hidden;">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+      <div>
+        <div class="section-subtitle">Comfort Redefined</div>
+        <h2 class="section-title text-gradient" style="margin-bottom: 2rem;">Designed for sleep, made for adventure.</h2>
+        <p style="font-size: 1.15rem; line-height: 1.7; margin-bottom: 2rem;">
+          Whether crossing international timezones, resting during travel layovers, or biohacking your morning recovery, the UC Ring Air sits comfortably on your hand, collecting data with medical-grade precision.
+        </p>
+        <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 2.5rem; color: var(--text-secondary);">
+          You won't feel it when you sleep, exercise, or wash your hands. Water resistant up to 100 meters (10 ATM), and ready to power your wellness habits wherever you travel.
+        </p>
+        <button class="glow-btn" onclick="scrollToQuiz()">Pre-Order Your Ring</button>
+      </div>
+      <div style="position: relative; border-radius: 24px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 20px 45px rgba(0,0,0,0.6);">
+        <img src="file:///C:/Users/amanr/.gemini/antigravity/brain/2aff7b3a-ce93-4ce8-b8a4-241ffd3f06de/uc_ring_lifestyle_1779540646982.png" alt="Person wearing the Ultra Comfortable smart ring" style="width: 100%; height: auto; display: block;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section id="comparison" class="section-padding reveal-element">
+    <div class="container">
+      <div class="anatomy-header">
+        <div class="section-subtitle">Spec Breakdown</div>
+        <h2 class="section-title text-gradient">Bulky Watch vs. Featherlight Ring</h2>
+        <p style="max-width: 600px; margin: 0 auto;">See how the UC Ring Air frees your body from screen alerts and heavy wristbands.</p>
+      </div>
+
+      <div class="comparison-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature Spec</th>
+              <th class="table-col-uc">UC Ring Air</th>
+              <th>Standard Smartwatches</th>
+              <th>Average Smart Rings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Total Weight</td>
+              <td class="table-col-uc">2.2 grams (Featherlight)</td>
+              <td>48 - 72 grams (Bulky)</td>
+              <td>4 - 8 grams</td>
+            </tr>
+            <tr>
+              <td>Thickness</td>
+              <td class="table-col-uc">2.4 mm</td>
+              <td>10.7 - 14.4 mm</td>
+              <td>2.8 - 3.2 mm</td>
+            </tr>
+            <tr>
+              <td>Distraction Rate</td>
+              <td class="table-col-uc">Zero (Screenless)</td>
+              <td>High (Constant notifications)</td>
+              <td>Zero (Screenless)</td>
+            </tr>
+            <tr>
+              <td>Battery Life Span</td>
+              <td class="table-col-uc">6 Days</td>
+              <td>18 - 36 Hours (Daily charging)</td>
+              <td>3 - 5 Days</td>
+            </tr>
+            <tr>
+              <td>Active Temperature tracking</td>
+              <td class="table-col-uc"><span class="checkmark-icon">&#10004;</span> Continuous</td>
+              <td><span class="crossmark-icon">&#10008;</span> Periodical only</td>
+              <td><span class="checkmark-icon">&#10004;</span> Continuous</td>
+            </tr>
+            <tr>
+              <td>Dynamic HRV Diagnostics</td>
+              <td class="table-col-uc"><span class="checkmark-icon">&#10004;</span> 10Hz sampling</td>
+              <td><span class="crossmark-icon">&#10008;</span> Sporadic</td>
+              <td><span class="checkmark-icon">&#10004;</span> 5Hz sampling</td>
+            </tr>
+            <tr>
+              <td>Free Sizing Kit included</td>
+              <td class="table-col-uc"><span class="checkmark-icon">&#10004;</span> Yes</td>
+              <td><span class="crossmark-icon">&#10008;</span> N/A</td>
+              <td><span class="checkmark-icon">&#10004;</span> Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Overlay & Drawer -->
+  <div class="cart-overlay" id="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-header-drawer">
+        <h3 class="cart-title-drawer">Your Pre-Order</h3>
+        <button class="cart-close-btn" id="close-cart-btn" aria-label="Close Cart">
+          <i data-feather="x"></i>
+        </button>
+      </div>
+      <div class="cart-items-container" id="cart-items-wrapper">
+        <!-- Rendered dynamically by JS -->
+        <p class="cart-empty-message">Your shopping cart is currently empty.</p>
+      </div>
+      <div class="cart-footer-drawer">
+        <div class="cart-summary-line">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <div class="cart-summary-line">
+          <span>Shipping & Sizing Kit</span>
+          <span style="color: var(--accent-green);">FREE</span>
+        </div>
+        <div class="cart-summary-line total">
+          <span>Total Pre-Order</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button class="glow-btn checkout-btn" id="cart-checkout-btn" onclick="checkoutAlert()">
+          Secure Checkout <i data-feather="lock"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon"></div>
+            <span>ULTRA COMFORTABLE</span>
+          </a>
+          <p>Deciphering metabolic fitness and sleep recovery through luxury, screenless hardware.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#hero">UC Ring Air</a></li>
+            <li><a href="#anatomy">Internal Hardware</a></li>
+            <li><a href="#quiz">Free Sizing Kit</a></li>
+            <li><a href="#app-simulator">PowerPlugs App</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Research</h4>
+          <ul>
+            <li><a href="#">Circadian Rhythm</a></li>
+            <li><a href="#">HRV Recovery Index</a></li>
+            <li><a href="#">Glucose Sensing</a></li>
+            <li><a href="#">Sleep Stage Studies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Sizing Support</a></li>
+            <li><a href="#">Developer API</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ultra Comfortable Inc. All rights reserved.</p>
+        <p>Crafted for human recovery.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
