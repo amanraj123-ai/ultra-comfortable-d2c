@@ -574,7 +574,7 @@ function addConfiguredToCart() {
     meta: `Finish: ${finishName} / Sizing: ${sizeOption}`,
     price: 299.00,
     qty: 1,
-    img: 'file:///C:/Users/amanr/.gemini/antigravity/brain/2aff7b3a-ce93-4ce8-b8a4-241ffd3f06de/uc_ring_hero_1779540630281.png'
+    img: 'uc_ring_hero_1779540630281.png'
   };
 
   const existingItem = cart.find(item => item.id === cartItem.id);
@@ -591,7 +591,7 @@ function addConfiguredToCart() {
       meta: 'Sizing tools included',
       price: 0.00,
       qty: 1,
-      img: 'file:///C:/Users/amanr/.gemini/antigravity/brain/2aff7b3a-ce93-4ce8-b8a4-241ffd3f06de/uc_ring_hero_1779540630281.png'
+      img: 'uc_ring_hero_1779540630281.png'
     };
     if (!cart.find(item => item.id === kitItem.id)) {
       cart.push(kitItem);
